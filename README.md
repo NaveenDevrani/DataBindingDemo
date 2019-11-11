@@ -48,5 +48,24 @@ For example, the binding variables that can be used in expressions are defined i
     </layout>
     ...
 
+#Best Practices
+
+<TextView 
+    ...
+    android:visibility="@{post.hasComments ? View.Visible : View.Gone}" />
+
+ @BindingAdapter({"isVisible"})
+  public static void setIsVisible(View view, boolean isVisible) {
+      if (isVislble) {
+        view.visibility = View.VISIBLE
+      } else {
+        view.visibility = View.GONE
+      }
+  }
+  
+  <TextView 
+    ...
+    app:isVisible="@{post.hasComments()}" />
+
 # Result
 ![Optional Text](../master/demo.gif)

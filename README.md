@@ -1,6 +1,6 @@
 # DataBindingDemo
 
-##Getting Started  
+## Getting Started  
 Add the following code in your app’s build.gradle:  
 android{  
 ...  

@@ -7,12 +7,10 @@ Android has now released a stable data-binding library which allows you to conne
 ## Getting Started  
 Add the following code in your app’s build.gradle:  
 
-android{   
-
+android  {   
         dataBinding {  
             enabled = true  
          }  
-         
      }  
  
 
@@ -33,4 +31,22 @@ For example, the binding variables that can be used in expressions are defined i
 </layout>
 ...  
 
+# The layout for each row of the RecyclerView is defined in item_row.xml.  
+...  
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="model"
+            type="com.journaldev.androidrecyclerviewdatabinding.DataModel" />
+        <variable
+            name="itemClickListener"
+            type="com.journaldev.androidrecyclerviewdatabinding.CustomClickListener" />
+    </data>
+    <your adapter view></your adapter view>
+    </layout>
+    ...
+
+# Result
 ![Optional Text](../master/demo.gif)

@@ -7,13 +7,14 @@ Android has now released a stable data-binding library which allows you to conne
 ## Getting Started  
 Add the following code in your app’s build.gradle:  
 
-...  
 android{   
+
         dataBinding {  
             enabled = true  
          }  
+         
      }  
-...  
+ 
 
 # Layouts and binding expressions
 

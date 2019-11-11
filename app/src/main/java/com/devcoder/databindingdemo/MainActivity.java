@@ -25,11 +25,11 @@ public class MainActivity extends AppCompatActivity {
 
     private void initControl() {
         ArrayList<DataModel> list = new ArrayList<>();
-        list.add(new DataModel("Oreo", "8.0", "https://picsum.photos/200/300.webp",R.drawable.ic_launcher_background));
-        list.add(new DataModel("Nought", "7.0", "https://picsum.photos/200/300.webp",R.drawable.ic_launcher_background));
-        list.add(new DataModel("Mas", "6.0", "https://picsum.photos/200/300.webp",R.drawable.ic_launcher_background));
-        list.add(new DataModel("lolipop", "5.0", "https://picsum.photos/200/300.webp",R.drawable.ic_launcher_background));
-        list.add(new DataModel("kitkate", "4.0", "https://picsum.photos/200/300.webp",R.drawable.ic_launcher_background));
+        list.add(new DataModel("Oreo", "8.0", "https://picsum.photos/200/300.webp", R.drawable.oreo));
+        list.add(new DataModel("Nought", "7.0", "https://picsum.photos/200/300.webp", R.drawable.nought));
+        list.add(new DataModel("Marshmallow", "6.0", "https://picsum.photos/200/300.webp", R.drawable.marshmallow));
+        list.add(new DataModel("Lollipop", "5.0", "https://picsum.photos/200/300.webp", R.drawable.lolipop));
+        list.add(new DataModel("Kitkat", "4.0", "https://picsum.photos/200/300.webp", R.drawable.kitkate));
         binding.setMyAdapter(new MyAdapter(list, this));
     }
 }

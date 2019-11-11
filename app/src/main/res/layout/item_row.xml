@@ -11,6 +11,8 @@
         <variable
             name="itemClickListener"
             type="com.devcoder.databindingdemo.interfaces.CustomClickListener" />
+
+        <import type="android.view.View" />
     </data>
 
     <androidx.cardview.widget.CardView
@@ -20,25 +22,36 @@
         app:cardUseCompatPadding="true">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:orientation="vertical">
+            android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/tvAndroidName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@{model.androidName}"
-                android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:imageUrl="@{model.imageUrlInt}" />
 
-            <TextView
-                android:id="@+id/tvAndroidVersion"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@{model.androidVersion}"
-                android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:orientation="vertical">
 
+                <TextView
+                    android:id="@+id/tvAndroidName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{model.androidName}"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+                <TextView
+                    android:id="@+id/tvAndroidVersion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{model.androidVersion}"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+            </LinearLayout>
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>

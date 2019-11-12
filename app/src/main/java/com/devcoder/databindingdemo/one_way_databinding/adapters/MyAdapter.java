@@ -1,4 +1,4 @@
-package com.devcoder.databindingdemo.adapters;
+package com.devcoder.databindingdemo.one_way_databinding.adapters;
 
 import android.app.Activity;
 import android.view.LayoutInflater;
@@ -11,8 +11,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.devcoder.databindingdemo.R;
 import com.devcoder.databindingdemo.databinding.ItemRowBinding;
-import com.devcoder.databindingdemo.interfaces.CustomClickListener;
-import com.devcoder.databindingdemo.models.DataModel;
+import com.devcoder.databindingdemo.one_way_databinding.interfaces.CustomClickListener;
+import com.devcoder.databindingdemo.one_way_databinding.models.DataModel;
 
 import java.util.ArrayList;
 

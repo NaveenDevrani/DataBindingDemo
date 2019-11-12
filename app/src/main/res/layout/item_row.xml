@@ -6,11 +6,11 @@
 
         <variable
             name="model"
-            type="com.devcoder.databindingdemo.models.DataModel" />
+            type="com.devcoder.databindingdemo.one_way_databinding.models.DataModel" />
 
         <variable
             name="itemClickListener"
-            type="com.devcoder.databindingdemo.interfaces.CustomClickListener" />
+            type="com.devcoder.databindingdemo.one_way_databinding.interfaces.CustomClickListener" />
 
         <import type="android.view.View" />
     </data>

@@ -1,4 +1,4 @@
-package com.devcoder.databindingdemo.models;
+package com.devcoder.databindingdemo.one_way_databinding.models;
 
 import android.widget.ImageView;
 

@@ -1,15 +1,15 @@
-package com.devcoder.databindingdemo;
+package com.devcoder.databindingdemo.one_way_databinding;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
 import android.os.Bundle;
 
-import com.devcoder.databindingdemo.adapters.MyAdapter;
+import com.devcoder.databindingdemo.R;
+import com.devcoder.databindingdemo.one_way_databinding.adapters.MyAdapter;
 import com.devcoder.databindingdemo.databinding.ActivityMainBinding;
-import com.devcoder.databindingdemo.models.DataModel;
+import com.devcoder.databindingdemo.one_way_databinding.models.DataModel;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {

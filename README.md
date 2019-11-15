@@ -1,4 +1,4 @@
-# DataBinding One way and Two way
+# One way and Two way DataBinding 
 
 # Overview  
 

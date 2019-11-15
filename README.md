@@ -1,4 +1,5 @@
-# DataBindingDemo
+# DataBinding One way and Two way
+
 # Overview  
 
 Android has now released a stable data-binding library which allows you to connect views with data in a much more powerful way than was possible previously. Applying data binding can improve your app by removing boilerplate for data-driven UI and allowing for two-way binding between views and data objects.  
